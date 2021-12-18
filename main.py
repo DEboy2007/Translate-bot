@@ -2,7 +2,6 @@ import discord
 from discord.ext import commands, tasks
 from googletrans import Translator, constants
 from pprint import pprint
-import keep_alive
 
 translator = Translator()
 
@@ -28,10 +27,6 @@ async def on_ready():
 
 @client.command()
 async def translate(ctx, arg):
-    await ctx.send(Translate(arg))
-
-
-keep_alive.keep_alive()
-
+  await ctx.send(Translate(arg))
 
 client.run(TOKEN)
