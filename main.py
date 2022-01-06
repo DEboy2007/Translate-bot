@@ -1,7 +1,6 @@
 import discord
 from discord.ext import commands, tasks
-from googletrans import Translator, constants
-from pprint import pprint
+from googletrans import Translator
 
 translator = Translator()
 

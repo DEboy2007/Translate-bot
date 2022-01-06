@@ -1,5 +1,4 @@
-from googletrans import Translator, constants
-from pprint import pprint
+from googletrans import Translator
 
 translator = Translator()
 
